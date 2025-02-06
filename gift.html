@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pick Your Gift, My Love</title>
+    <style>
+      body {
+        background-color: #ffe6f2;
+        text-align: center;
+        font-family: "Arial", sans-serif;
+      }
+      #giftquestion {
+        font-size: 32px;
+        color: #d63384;
+        margin-top: 50px;
+      }
+      .gift-selection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .gift-item {
+        background: #ffb6c1;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+        width: 200px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .gift-item:hover {
+        background: #ff66b2;
+        color: white;
+      }
+      .gift-item img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+      .button {
+        background-color: #ff66b2;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 20px;
+        border-radius: 25px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .button:hover {
+        background-color: #ff3385;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="giftquestion"><b>What gift would you like? 💖</b></div>
+    <div class="gift-selection">
+      <div class="gift-item" onclick="location.href='gift_10dollars.html'">
+        <img src="cat-money.gif" alt="Free $10" />
+        <div>💰 Free $10</div>
+      </div>
+      <div class="gift-item" onclick="location.href='gift_spotify.html'">
+        <img src="ronheadset.png" alt="Free Spotify" />
+        <div>🎵 Free Spotify</div>
+      </div>
+      <div class="gift-item" onclick="location.href='myheart.html'">
+        <img src="catheart.jpg" alt="Forever my love" />
+        <div>💖 Forever my love</div>
+      </div>
+    </div>
+    <button class="button" onclick="location.href='final.html'">Continue 💞</button>
+  </body>
+</html>
